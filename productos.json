@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Gel Exfoliador facial",
+        "precio": 690,
+        "cantidad": 10,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjucGwCLOqG48CXCcIHUy1ZoXpIAzlXbVuYQ&s",
+        "categoria": "Faciales"
+    },
+    {
+        "id": 2,
+        "nombre": "Gel corporal exfoliante Neutrogena",
+        "precio": 520,
+        "cantidad": 15,
+        "imagen": "https://images.ctfassets.net/bcjr30vxh6td/5t3jCAlkZwkocBySElYe7F/2ab5ec83069bf74ae83c1ff816479edf/6815130_alt1",
+        "categoria": "Corporales"
+    },
+    {
+        "id": 3,
+        "nombre": "Shapoo profesional",
+        "precio": 350,
+        "cantidad": 20,
+        "imagen": "https://www.lorealprofessionnel.co/-/media/project/loreal/brand-sites/lp/americas/latam/hair-care/scalp-advanced/pdp/anti-dandruff-dermo-clarifier-shampoo/1-slider.jpg?rev=39182c35dbbc46a6894eca38d00efd2b&cx=0.53&cy=0.58&cw=360&ch=520&hash=6E19E5F2DC3670B5BB11AD1DC5FAC5E4",
+        "categoria": "Para el cabello"
+    },
+    {
+        "id": 4,
+        "nombre": "Crema Corporal Cerave",
+        "precio": 890,
+        "cantidad": 8,
+        "imagen": "https://lh3.googleusercontent.com/vRE6KtOvkudtq0bBbmgdJSn94st_J3YrmvIA2H2YVRhXeITsBDRKmZf6tlhBaUPtziDMSNMD4fQJiczyPaR92OoTYJQxauiadbMbuT6G0is7lxIi",
+        "categoria": "Corporales"
+    },
+    {
+        "id": 5,
+        "nombre": "Acondiacionador Profesional",
+        "precio": 610,
+        "cantidad": 12,
+        "imagen": "https://static.sweetcare.com/img/prd/488/v-638200523971466514/loreal-professionnel-012833fe_02.webp",
+        "categoria": "Geles"
+    }
+]

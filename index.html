@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belleza Natural</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Etéreo Spa</title>
+    <link rel="stylesheet" href="./js/css/style.css">
 </head>
 
 <body>
@@ -14,47 +14,58 @@
         <h1>Etéreo Spa</h1>
         <nav>
             <a href="#">Inicio</a>
-            <a href="#">Catálogo</a>
-            <a href="#">Contacto</a>
+            <a href="#">Servicios</a>
+            <a href="#">Productos</a>
         </nav>
     </header>
 
     <main>
-        <!-- Formulario para agregar productos -->
-        <section id="formulario">
+        <!-- Formulario privado para agregar productos -->
+        <section id="formulario" class="oculto">
             <h2>Agregar producto al catálogo</h2>
-            <form id="agregar-form">
+            <form id="formulario-admin">
                 <input type="text" id="nombre-producto" placeholder="Nombre del producto" required />
-                <input type="number" id="precio-producto" placeholder="Precio" min="1" required />
-                <input type="text" id="imagen-producto" placeholder="URL de imagen" required />
-                <button type="submit">Agregar</button>
+                <input type="number" id="precio-producto" placeholder="Precio (Ej: 12.99)" min="1" required />
+                <input type="text" id="imagen-producto" placeholder="URL de imagen del producto" required />
+                <button type="submit" id="agregarProducto">Agregar</button>
             </form>
             <p id="form-error" class="error"></p>
         </section>
 
-        <!-- Catálogo  -->
+        <!-- Filtro por categoría -->
+        <label for="filtro-categoria">Filtrar por categoría:</label>
+        <select id="filtro-categoria">
+            <option value="todos">Todos</option>
+            <option value="Faciales">Faciales</option>
+            <option value="Corporales">Corporales</option>
+            <option value="Para el cabello">Para el cabello</option>
+        </select>
+
+        <!-- Catálogo -->
         <section id="catalogo">
             <h2>Catálogo</h2>
             <div id="product-list"></div>
         </section>
 
-        <!-- Carrito  -->
+        <!-- Carrito -->
         <section id="carrito">
             <h2>🛒 Carrito de Compras</h2>
-            <ul id="cart-items"></ul>
-            <p id="cart-total">Total: $0.00</p>
-            <button id="vaciar-carrito">Vaciar carrito</button>
+            <ul id="carrito-lista"></ul>
+            <p>Total: <span id="total-carrito">$0.00</span></p>
+            <button id="finalizar-compra">Finalizar Compra</button>
         </section>
     </main>
 
     <hr class="decoracion-hr" />
 
     <footer>
-        <p>&copy; 2025 Belleza Natural - Spa Etéreo</p>
+        <p>© 2025 Belleza Natural - Etéreo Spa</p>
+        <button id="modo-admin-btn">⚙️ Panel privado</button>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/main.js"></script>
 
-    </body>
+</body>
 
 </html>
