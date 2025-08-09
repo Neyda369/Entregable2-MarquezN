@@ -17,4 +17,4 @@ Visualizar servicios y generar reserva en línea.
 * JavaScript	Lógica de interacción, manejo del DOM, validaciones
 localStorage	Almacenamiento persistente de catálogo y carrito
 JSON	Formato de datos usado para guardar arrays de productos.
-Se usó la librería de Sweetalert. 
+* Se usó la librería de Sweetalert. 
