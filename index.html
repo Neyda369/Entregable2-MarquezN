@@ -14,37 +14,76 @@
         <h1>Etéreo Spa</h1>
         <nav>
             <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Productos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#catalogo">Productos</a>
         </nav>
     </header>
 
     <main>
-        <!-- Formulario privado para agregar productos -->
-        <section id="formulario" class="oculto">
-            <h2>Agregar producto al catálogo</h2>
-            <form id="formulario-admin">
-                <input type="text" id="nombre-producto" placeholder="Nombre del producto" required />
-                <input type="number" id="precio-producto" placeholder="Precio (Ej: 12.99)" min="1" required />
-                <input type="text" id="imagen-producto" placeholder="URL de imagen del producto" required />
-                <button type="submit" id="agregarProducto">Agregar</button>
-            </form>
-            <p id="form-error" class="error"></p>
+        <section id="inicio">
+            <div id="presentacion-spa" class="presentacion-contenido">
+                <div class="texto-spa">
+                    <h2>Bienvenida a Etéreo Spa</h2>
+                    <p>Un espacio de relajación, belleza y armonía. En Etéreo Spa combinamos productos naturales y
+                        técnicas profesionales para brindarte una experiencia única. ¡Descubre lo que tenemos para ti!
+                    </p>
+                    <a href="#catalogo" class="btn-ver-productos">Ver productos</a>
+                </div>
+                <img src="./Entregable2-MarquezN/assets/terapia-facial.jpg" alt="Terapia facial en Etéreo Spa"
+                    class="imagen-spa" />
+            </div>
         </section>
 
-        <!-- Filtro por categoría -->
-        <label for="filtro-categoria">Filtrar por categoría:</label>
-        <select id="filtro-categoria">
-            <option value="todos">Todos</option>
-            <option value="Faciales">Faciales</option>
-            <option value="Corporales">Corporales</option>
-            <option value="Para el cabello">Para el cabello</option>
-        </select>
+        <div class="separador-suave"></div>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="lista-servicios">
+                <!-- Los servicios se insertarán dinámicamente -->
+            </div>
+        </section>
+
+        <section id="reserva-servicio" class="oculto">
+
+            <h2>Reservar Servicio</h2>
+            <form id="form-reserva">
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre" required />
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" required />
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" required />
+
+                <label for="tipo">Servicio:</label>
+                <select id="tipo" required></select>
+
+                <button type="submit" id="btn-reservar">Reservar</button>
+
+
+            </form>
+        </section>
+
+
+        <div class="separador-suave"></div>
 
         <!-- Catálogo -->
+
+        <!-- Productos  -->
         <section id="catalogo">
             <h2>Catálogo</h2>
-            <div id="product-list"></div>
+
+            <!-- Filtro por categoría -->
+            <label for="filtro-categoria">Filtrar por categoría:</label>
+            <select id="filtro-categoria">
+                <option value="todos">Todos</option>
+                <option value="Faciales">Faciales</option>
+                <option value="Corporales">Corporales</option>
+                <option value="Para el cabello">Para el cabello</option>
+            </select>
+
+            <ul id="product-list"></ul>
         </section>
 
         <!-- Carrito -->
@@ -56,15 +95,17 @@
         </section>
     </main>
 
+
     <hr class="decoracion-hr" />
 
     <footer>
         <p>© 2025 Belleza Natural - Etéreo Spa</p>
-        <button id="modo-admin-btn">⚙️ Panel privado</button>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
 
 </body>
 
